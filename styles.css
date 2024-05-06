@@ -35,8 +35,8 @@ body {
 }
 
 div[class^="row-"]:hover {
-  transform: scale(1.20);
-  transition : 0.01s rgb(208, 208, 208);
+  transform: scale(1.2);
+  transition: 0.01s rgb(208, 208, 208);
 }
 
 .selections {
@@ -81,12 +81,14 @@ input:focus {
   outline: none;
 }
 
-.background-picker-container, .color-picker-container p {
+.background-picker-container,
+.color-picker-container p {
   font-size: 30px;
   font-weight: 600;
 }
 
-.color-picker-container, .background-picker-container{
+.color-picker-container,
+.background-picker-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -94,7 +96,10 @@ input:focus {
   justify-content: center;
 }
 
-#random-color, #clear, #eraser {
+#random-color,
+#clear,
+#eraser,
+#borders {
   padding: 12px;
   border-radius: 12px;
   border: none;
@@ -109,32 +114,40 @@ input:focus {
   box-shadow: 0px 0px 12px 2px rgb(123, 255, 211);
 }
 
-
 #clear {
-    background-color: rgb(141, 0, 0);
-  }
-  
-  #clear:hover {
-    transition: 0.9s ease-in-out;
-    box-shadow: 0px 0px 12px 2px rgb(255, 123, 123);
-  }
+  background-color: rgb(187, 17, 17);
+}
 
-  #eraser {
-    background-color: rgb(84, 84, 84);
-  }
+#clear:hover {
+  transition: 0.9s ease-in-out;
+  box-shadow: 0px 0px 12px 2px rgb(255, 123, 123);
+}
 
-  #eraser:hover {
-    transition: 0.9s ease-in-out;
-    box-shadow: 0px 0px 12px 2px rgba(161, 161, 161, 0.677);
-  }
+#eraser {
+  background-color: rgb(84, 84, 84);
+}
+
+#eraser:hover {
+  transition: 0.9s ease-in-out;
+  box-shadow: 0px 0px 12px 2px rgba(161, 161, 161, 0.677);
+}
+
+#borders {
+  background-color: #8204ffe4;
+}
+
+#borders:hover {
+  transition: 0.9s ease-in-out;
+  box-shadow: 0px 0px 12px 2px #ab5afb;
+}
 
 .controls {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 input {
-    width: 220px;
-    padding: 1.2px;
-    border-radius: 8px;
+  width: 220px;
+  padding: 1.2px;
+  border-radius: 8px;
 }
